@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="376dp"
+            android:layout_height="689dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="35dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="266dp"
+        android:layout_height="190dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton3"
+                android:text="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton6"
+                android:text="6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickButton9"
+                android:text="9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:onClick="onClickCancel"
+                android:text="취소" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:onClick="onClickRemove"
+                android:text="삭제" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="268dp"
+        android:layout_height="281dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textOff="1"
+                android:textOn="1" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="2"
+                android:textOn="2" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="3"
+                android:textOn="3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="4"
+                android:textOn="4" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="5"
+                android:textOn="5" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="6"
+                android:textOn="6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ToggleButton
+                android:id="@+id/toggleButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="7"
+                android:textOn="7" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="8"
+                android:textOn="8" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="9"
+                android:textOn="9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickToggleMenuInput"
+                android:text="확인" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickToggleMenuCancel"
+                android:text="취소" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickToggleMenuRemove"
+                android:text="삭제" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
